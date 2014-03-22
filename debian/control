@@ -10,7 +10,7 @@ Vcs-Browser: https://github.com/chilicuil/ffcast-deb.git
 
 Package: ffcast
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, ffmpeg|recordmydesktop, x11-utils
+Depends: ${shlibs:Depends}, ${misc:Depends}, libav-tools|ffmpeg|recordmydesktop, x11-utils
 Description: Screen recording wrapper for Unix cli screencast utilities
  ffcast helps the user interactively select a screen region and hands over the
  geometry to an external command, such as ffmpeg, for screen recording. 
