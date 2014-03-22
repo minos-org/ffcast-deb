@@ -1,0 +1,16 @@
+Source: ffcast
+Section: x11
+Priority: optional
+Maintainer: Javier P.L. <chilicuil@ubuntu.com>
+Build-Depends: debhelper (>= 7.0.5), libx11-dev, bash-completion
+Standards-Version: 3.9.4
+Homepage: https://github.com/chilicuil/ffcast
+Vcs-Git: git://github.com/chilicuil/ffcast-deb.git
+Vcs-Browser: https://github.com/chilicuil/ffcast-deb.git
+
+Package: ffcast
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ffmpeg|recordmydesktop, x11-utils
+Description: Screen recording wrapper for Unix cli screencast utilities
+ ffcast helps the user interactively select a screen region and hands over the
+ geometry to an external command, such as ffmpeg, for screen recording. 

@@ -1,0 +1,28 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+# Sample debian/rules that uses debhelper.
+# This file was originally written by Joey Hess and Craig Small.
+# As a special exception, when this file is copied by dh-make into a
+# dh-make output file, you may use that output file without restriction.
+# This special exception was added by Craig Small in version 0.37 of dh-make.
+
+DEB_VERSION:=$(shell dpkg-parsechangelog -n1 | sed -n '/^Version: /s///p')
+DEB_UPSTREAM_VERSION:=$(shell DEB_VERSION=${DEB_VERSION}; echo $${DEB_VERSION%-*})
+DEB_MASTER_VERSION:=$(shell DEB_UPSTREAM_VERSION=${DEB_UPSTREAM_VERSION}; echo $${DEB_UPSTREAM_VERSION\#*+git})
+
+# Uncomment this to turn on verbose mode.
+export DH_VERBOSE=1
+
+%:
+	dh $@ --with bash_completion
+
+get-orig-source:
+	rm -rf debian/tmp; mkdir debian/tmp
+	cd debian/tmp; wget https://github.com/chilicuil/ffcast/archive/${DEB_MASTER_VERSION}.tar.gz
+	cd debian/tmp; tar xvzf ${DEB_MASTER_VERSION}.tar.gz
+	cd debian/tmp; mv ffcast-* ffcast-${DEB_UPSTREAM_VERSION}
+	cd debian/tmp; tar cvJf ffcast_${DEB_UPSTREAM_VERSION}.orig.tar.xz ffcast-${DEB_UPSTREAM_VERSION}
+	mv debian/tmp/ffcast_${DEB_UPSTREAM_VERSION}.orig.tar.xz .
+	mv debian/tmp/ffcast-${DEB_UPSTREAM_VERSION} .
+	cp ffcast-${DEB_UPSTREAM_VERSION}/ffcast.bash-completion debian/
+	rm -rf debian/tmp
