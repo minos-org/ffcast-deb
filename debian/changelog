@@ -1,3 +1,9 @@
+ffcast (0~20140428+git079d5e24f3-build1) precise; urgency=low
+
+  * New version
+
+ -- Javier P.L. <chilicuil@ubuntu.com>  Mon, 28 Apr 2014 23:20:38 -0500
+
 ffcast (0~20140331+gitd9834736f0-1) precise; urgency=low
 
   * Initial release
