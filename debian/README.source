@@ -1,17 +1,15 @@
 Debian packaging for ffcast
 ---------------------------
 
-A quick summary in how update the Debian packaging:
+Steps to update this package:
 
-    git clone --dept=1 https://github.com/chilicuil/ffcast-deb
+    git clone --dept=1 https://github.com/minos-org/ffcast-deb
     cd ffcast-deb
-    dch -i #insert proper new upstream version 
+    dch -i #insert proper new upstream version (git revision between +/-)
     debian/rules get-orig-source
     mv debian ffcast-*
     cd ffcast-*
     [ Make here some adaptations, like updating debian/patches, if needed ]
-    $EDITOR debian/changelog
+    [ add more details if required, $EDITOR debian/changelog ]
     debuild -S
     upload .dsc | .changes files
-
- -- Javier P.L. <chilicuil@ubuntu.com>, Mar 21 Mar 2014 21:08:35 PM UTC
