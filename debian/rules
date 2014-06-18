@@ -18,7 +18,7 @@ export DH_VERBOSE=1
 
 get-orig-source:
 	rm -rf debian/tmp; mkdir debian/tmp
-	cd debian/tmp; wget https://github.com/chilicuil/ffcast/archive/${DEB_MASTER_VERSION}.tar.gz
+	cd debian/tmp; wget https://github.com/minos-org/ffcast/archive/${DEB_MASTER_VERSION}.tar.gz
 	cd debian/tmp; tar xvzf ${DEB_MASTER_VERSION}.tar.gz
 	cd debian/tmp; mv ffcast-* ffcast-${DEB_UPSTREAM_VERSION}
 	cd debian/tmp; tar cvJf ffcast_${DEB_UPSTREAM_VERSION}.orig.tar.xz ffcast-${DEB_UPSTREAM_VERSION}
