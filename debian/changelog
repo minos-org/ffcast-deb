@@ -1,11 +1,5 @@
-ffcast (0~20140428+git079d5e24f3-minos1) precise; urgency=low
+ffcast (1:201406191921+git5fb633e-minos) precise; urgency=low
 
   * New version
 
  -- Javier P.L. <chilicuil@ubuntu.com>  Mon, 28 Apr 2014 23:20:38 -0500
-
-ffcast (0~20140331+gitd9834736f0-minos1) precise; urgency=low
-
-  * Initial release
-
- -- Javier P.L. <chilicuil@ubuntu.com>  Fri, 31 Mar 2014 20:49:22 -0600
