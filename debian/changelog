@@ -1,3 +1,10 @@
+ffcast (1:201608161011+git5fb633e-minos) precise; urgency=low
+
+  * add trusty/xenial packages into lp recipe:
+    https://code.launchpad.net/~minos-archive/+recipe/ffcast
+
+ -- Javier P.L. <chilicuil@ubuntu.com>  Tue, 16 Aug 2016 10:11:44 -0500
+
 ffcast (1:201406192253+git5fb633e-minos) precise; urgency=low
 
   * New version
