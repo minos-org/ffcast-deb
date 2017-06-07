@@ -1,14 +1,14 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: ffcast
-Upstream-Contact: https://github.com/chilicuil/ffcast
-Source: https://github.com/chilicuil/ffcast/archive/master.zip
+Upstream-Contact: https://github.com/javier-lopez/ffcast
+Source: https://github.com/javier-lopez/ffcast/archive/master.zip
 
 Files: *
 Copyright: Copyright (C) 2011  lolilolicon  <lolilolicon@gmail.com>
 License: GPL-3
 
 Files: debian/*
-Copyright: Copyright (c) 2014, Javier P.L. <chilicuil@ubuntu.com>
+Copyright: Copyright (c) 2014, Javier López <m@javier.io>
 License: GPL-3
 
 License: GPL-3

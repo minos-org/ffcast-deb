@@ -1,12 +1,12 @@
 Source: ffcast
 Section: x11
 Priority: optional
-Maintainer: Javier P.L. <chilicuil@ubuntu.com>
+Maintainer: Javier López <m@javier.io>
 Build-Depends: debhelper (>= 7.0.5), libx11-dev, bash-completion
 Standards-Version: 3.9.4
-Homepage: https://github.com/chilicuil/ffcast
-Vcs-Git: git://github.com/chilicuil/ffcast-deb.git
-Vcs-Browser: https://github.com/chilicuil/ffcast-deb.git
+Homepage: https://github.com/javier-lopez/ffcast
+Vcs-Git: git://github.com/javier-lopez/ffcast-deb.git
+Vcs-Browser: https://github.com/javier-lopez/ffcast-deb.git
 
 Package: ffcast
 Architecture: any
